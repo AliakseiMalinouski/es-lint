@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "react-app",
+        "react-app/jest"
+    ],
+    "rules": {
+        "no-unused-vars": "warn", // не используемые переменные
+        "no-console": "error", // использование консолей
+        "quotes": ["error", "single"], // строгий выбор ковычек: одинарные либо двойные
+        "jsx-quotes": ["error", "prefer-double"], // ковычки для атрибутов jsx
+        "prefer-const": "error", // предпочтение const
+        "indent": ["warn", 2], // тип отступов
+        "max-len": ["error", {"code": 120}], // длина одной строки,
+        "comma-dangle": ["error", "always-multiline"], // опциональные запятые в {}
+        "semi": ["error", "always"], // отсуствие ;
+        "import/order": ["error", {
+            "groups": [
+                "index",
+                "sibling",
+                "parent",
+                "internal",
+                "external",
+                "builtin",
+                "object",
+                "type"
+            ]
+        }]
+    }
+}
